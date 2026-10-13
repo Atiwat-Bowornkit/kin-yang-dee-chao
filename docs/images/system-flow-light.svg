@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 816" width="900" height="816" role="img" aria-labelledby="title desc">
+  <title id="title">แผนผังการทำงานหลักของระบบกิ๋นหยังดีจ้าว</title>
+  <desc id="desc">ผู้ใช้ถ่ายหรือเลือกภาพ AI ระบุวัตถุดิบ แอปตรวจคำตอบ ผู้ใช้ตรวจแก้และยืนยัน จากนั้นแอปจับคู่สูตรในเครื่อง หรือ AI เสนอสูตรเพิ่มเมื่อผู้ใช้กดขอ แล้วแอปจัดอันดับและอธิบาย ผู้ใช้เลือกสูตรไปใช้งาน</desc>
+  <style>
+    .box  { fill: #FFFFFF; stroke: #3A2620; stroke-width: 1.6; }
+    .line { fill: none; stroke: #3A2620; stroke-width: 1.6; }
+    .head { fill: #3A2620; }
+    text  { font-family: 'Sarabun', 'Noto Sans Thai', 'Leelawadee UI', 'Thonburi', Tahoma, sans-serif; font-size: 17px; fill: #2B1A14; text-anchor: middle; }
+    .user { fill: #B8301F; font-weight: 700; }
+    .ai   { fill: #8A5A00; font-weight: 700; }
+    .app  { fill: #2E6B34; font-weight: 700; }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" class="head"/>
+    </marker>
+  </defs>
+
+  <!-- 1 -->
+  <rect class="box" x="240" y="20" width="420" height="44" rx="8"/>
+  <text x="450" y="48"><tspan class="user">ผู้ใช้:</tspan> ถ่ายหรือเลือกภาพวัตถุดิบ</text>
+  <line class="line" x1="450" y1="64" x2="450" y2="93" marker-end="url(#arrow)"/>
+
+  <!-- 2 -->
+  <rect class="box" x="240" y="94" width="420" height="44" rx="8"/>
+  <text x="450" y="122"><tspan class="ai">AI:</tspan> ระบุวัตถุดิบจากภาพ</text>
+  <line class="line" x1="450" y1="138" x2="450" y2="167" marker-end="url(#arrow)"/>
+
+  <!-- 3 -->
+  <rect class="box" x="240" y="168" width="420" height="64" rx="8"/>
+  <text x="450" y="195"><tspan class="app">แอป:</tspan> ตรวจคำตอบ</text>
+  <text x="450" y="219">และแสดงรายการวัตถุดิบ</text>
+  <line class="line" x1="450" y1="232" x2="450" y2="261" marker-end="url(#arrow)"/>
+
+  <!-- 4 -->
+  <rect class="box" x="240" y="262" width="420" height="44" rx="8"/>
+  <text x="450" y="290"><tspan class="user">ผู้ใช้:</tspan> ตรวจ เพิ่ม ลบ หรือแก้ชื่อวัตถุดิบ</text>
+  <line class="line" x1="450" y1="306" x2="450" y2="335" marker-end="url(#arrow)"/>
+
+  <!-- 5 -->
+  <rect class="box" x="240" y="336" width="420" height="44" rx="8"/>
+  <text x="450" y="364"><tspan class="user">ผู้ใช้:</tspan> ยืนยันรายการวัตถุดิบและของในครัว</text>
+
+  <!-- แยกสองทาง -->
+  <polyline class="line" points="450,380 450,410"/>
+  <polyline class="line" points="220,410 680,410"/>
+  <line class="line" x1="220" y1="410" x2="220" y2="439" marker-end="url(#arrow)"/>
+  <line class="line" x1="680" y1="410" x2="680" y2="439" marker-end="url(#arrow)"/>
+
+  <!-- 6 ซ้าย -->
+  <rect class="box" x="40" y="440" width="360" height="64" rx="8"/>
+  <text x="220" y="467"><tspan class="app">แอป:</tspan> จับคู่สูตรในเครื่อง</text>
+  <text x="220" y="491">ตามรายการและเงื่อนไข</text>
+
+  <!-- 6 ขวา -->
+  <rect class="box" x="500" y="440" width="360" height="64" rx="8"/>
+  <text x="680" y="467"><tspan class="ai">AI:</tspan> เสนอสูตรเพิ่มเติม</text>
+  <text x="680" y="491">เฉพาะเมื่อผู้ใช้กดขอ</text>
+  <line class="line" x1="680" y1="504" x2="680" y2="533" marker-end="url(#arrow)"/>
+
+  <!-- 7 ขวา -->
+  <rect class="box" x="500" y="534" width="360" height="44" rx="8"/>
+  <text x="680" y="562"><tspan class="app">แอป:</tspan> ตรวจสูตรและบันทึกใน Cache</text>
+
+  <!-- รวมสองทาง -->
+  <polyline class="line" points="220,504 220,608 680,608 680,578"/>
+  <line class="line" x1="450" y1="608" x2="450" y2="637" marker-end="url(#arrow)"/>
+
+  <!-- 8 -->
+  <rect class="box" x="240" y="638" width="420" height="64" rx="8"/>
+  <text x="450" y="665"><tspan class="app">แอป:</tspan> ประเมินเงื่อนไขและจัดอันดับ</text>
+  <text x="450" y="689">อธิบายสิ่งที่มีและต้องเตรียม</text>
+  <line class="line" x1="450" y1="702" x2="450" y2="731" marker-end="url(#arrow)"/>
+
+  <!-- 9 -->
+  <rect class="box" x="240" y="732" width="420" height="64" rx="8"/>
+  <text x="450" y="759"><tspan class="user">ผู้ใช้:</tspan> เลือกสูตรและนำไปใช้งาน</text>
+  <text x="450" y="783">ดูรายละเอียด / ซื้อของ / ทำอาหาร / แชร์</text>
+</svg>
