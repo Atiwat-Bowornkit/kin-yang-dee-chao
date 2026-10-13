@@ -15,6 +15,8 @@
 
 [ฟีเจอร์](#ฟีเจอร์เด่น) · [ภาพหน้าจอ](#ภาพหน้าจอ) · [เริ่มต้นใช้งาน](#เริ่มต้นใช้งาน) · [ตั้งค่า AI](#ตั้งค่า-ai) · [เอกสาร](#เอกสารเพิ่มเติม)
 
+📄 [รายงานโครงงาน (PDF)](docs/report/KinYangDeeChao_Report.pdf) · 🎬 [วิดีโอสาธิต (MP4)](docs/video/KinYangDeeChao_Demo.mp4)
+
 </div>
 
 ---
@@ -208,6 +210,8 @@ flutter test tool/screenshots_test.dart --dart-define=SHOT_DIR=build/shots
 |---|---|
 | [docs/AI_FLOW.md](docs/AI_FLOW.md) | แอปใช้ AI ตรงไหน และตรวจอะไรเอง |
 | [docs/DEMO_GUIDE.md](docs/DEMO_GUIDE.md) | ขั้นตอนสาธิตแอปในประมาณ 5 นาที |
+| [docs/report/KinYangDeeChao_Report.pdf](docs/report/KinYangDeeChao_Report.pdf) | รายงานโครงงานฉบับสมบูรณ์ (PDF, 19 หน้า) |
+| [docs/video/KinYangDeeChao_Demo.mp4](docs/video/KinYangDeeChao_Demo.mp4) | วิดีโอสาธิตการใช้งานแอป (MP4, 11.8 MB) |
 
 ## การมีส่วนร่วม
 
